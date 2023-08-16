@@ -20,22 +20,24 @@
 .weather-h1 {
   font-size: 28px;
   background-color: aliceblue;
+  border: 1px solid #3498db;
   color: black;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   margin: 20px;
-  width: 80%;
+  width: 20% max;
   text-align: center;
 }
 
 .weather-text {
   background-color: aliceblue;
+  border: 1px solid #3498db;
   color: black;
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
-  width: 80%;
-  text-align: center;
+  width: 20% max;
+    text-align: center;
 }
 
 .weather-label {
@@ -57,10 +59,10 @@
 }
 
 .weather-submit:hover {
-  background-color: #2980b9;
+  background-color: #136399;
   transform: scale(1.1);
 }
 
 .text {
-  color: black;
+  color: #3498db;
 }

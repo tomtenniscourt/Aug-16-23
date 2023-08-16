@@ -79,7 +79,7 @@ class Weather extends Component {
     return (
       <div className="weather-page-content">
         {/* < NavBar /> */}
-        <h1 className="weather-h1">Tom's Weather Forecast App</h1>
+        <h1 className="weather-h1">Tom's Weather App</h1>
         <div className="weather-text">
           <form onSubmit={this.handleSubmit}>
             <label className="weather-label">
