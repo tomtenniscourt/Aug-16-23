@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import NavBar from "./NavBar.js";
 
 class Weather extends Component {
   constructor(props) {
@@ -28,13 +27,15 @@ class Weather extends Component {
     event.preventDefault();
 
     const apiKey = "&appid=052f26926ae9784c2d677ca7bc5dec98";
-    const baseUrl = "http://api.openweathermap.org/data/2.5/weather?zip=";
+    const baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";
     const zipCode = this.state.zipcode;
     const units = "&units=imperial";
 
     fetch(`${baseUrl}${zipCode}${units}${apiKey}`)
       .then((response) => response.json())
       .then((json) => {
+        console.log("API response:", json); // Add this line for debugging
+
         if (json.cod === "404") {
           this.setState({
             error: "Invalid zip code. Please try again.",
@@ -70,7 +71,7 @@ class Weather extends Component {
     if (description) {
       const iconCode = this.state.weather ? this.state.weather[0].icon : null;
       const iconUrl = iconCode
-        ? `http://openweathermap.org/img/w/${iconCode}.png`
+        ? `https://openweathermap.org/img/w/${iconCode}.png`
         : null;
       weatherIcon = iconUrl && <img src={iconUrl} alt={description} />;
     }
