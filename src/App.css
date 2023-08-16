@@ -15,55 +15,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
+.weather-h1 {
+  font-size: 28px;
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.weather-text {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 80%;
+  text-align: center;
 }
 
 .weather-label {
-  font-size: 25px;
-  font-family: 'Josefin Sans', sans-serif;
-  max-width: 80%;
-  margin: 0 auto;
+  font-size: 18px;
+  max-width: 100%;
 }
 
 .weather-submit {
-  font-size: 25px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #3498db;
   color: white;
   border: none;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 10px;
 }
 
 .weather-submit:hover {
   background-color: #2980b9;
-  transform: scale(1.2);
-}
-
-.weather-h1 {
-  font-size: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: aliceblue;
-  color: black;
-  padding: 10px;
-  margin: 20px auto;
-  max-width: 80%;
-  margin-top: -50vh;
-}
-
-.weather-text {
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: aliceblue;
-  color: black;
-  padding: 10px;
-  margin: 20px auto;
-  max-width: 80%;
+  transform: scale(1.1);
 }
 
 .text {
